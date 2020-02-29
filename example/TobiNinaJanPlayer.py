@@ -11,8 +11,10 @@ class TobiNinaJanPlayer(Player):
         return self._player.nextMove()
 
     def inform(self, column: int, opponent: bool):
-        action = 1 if opponent else 0
-        self._player.inform(action)
+        # Tobi said that the information about the player can be dropped --
+        # as long as the order of the messages is alright. Let's just assume
+        # that it is.
+        self._player.inform(column)
         pass
 
     def reset(self):
