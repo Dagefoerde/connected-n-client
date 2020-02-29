@@ -1,6 +1,6 @@
 """ Player implementation for TobiNinaJan"""
 
-from py_client.player import Player
+from py_client.players import Player
 
 
 class TobiNinaJanPlayer(Player):
